@@ -14,7 +14,9 @@ import org.testcontainers.junit.jupiter.Testcontainers
 class TestContainerForBook {
 
     @Container
-    val database = MySQLContainer<Nothing>("mysql:5.7.33")
+    val database = MySQLContainer<Nothing>("mysql:5.7.33").apply {
+        withDatabaseName("myapp")
+    }
 
     @Autowired
     lateinit var repository: BookRepository
