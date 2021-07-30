@@ -10,7 +10,7 @@ data class Book(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long,
-    var isbn: String
+    var isbn: String,
     var title: String,
     var aurthor: String,
     var price: Long
