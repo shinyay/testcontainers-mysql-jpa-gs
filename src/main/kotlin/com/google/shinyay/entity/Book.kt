@@ -12,6 +12,6 @@ data class Book(
     var id: Long,
     var isbn: String,
     var title: String,
-    var aurthor: String,
+    var author: String,
     var price: Long
 )
