@@ -1,0 +1,8 @@
+spring:
+  datasource:
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}/myapp
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:mysql:5.7.33:///test
+  jpa:
+    hibernate:
+      ddl-auto: validate
