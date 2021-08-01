@@ -35,7 +35,7 @@ class TestContainerForBook {
 //    companion object {
 //        @Container
 //        val database = MySQLContainer<Nothing>("mysql:5.7.33").apply {
-//            withDatabaseName("myapp")
+//            withDatabaseName("mysql")
 //        }
 //
 //        @JvmStatic
