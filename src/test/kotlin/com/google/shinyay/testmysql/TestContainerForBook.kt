@@ -32,28 +32,28 @@ class TestContainerForBook {
     @Autowired
     lateinit var objectMapper: ObjectMapper
 
-    companion object {
-        @Container
-        val database = MySQLContainer<Nothing>("mysql:5.7.33").apply {
-            withDatabaseName("myapp")
-        }
-
-        @JvmStatic
-        @DynamicPropertySource
-        fun properties(registry: DynamicPropertyRegistry) {
-            registry.add("spring.datasource.url", database::getJdbcUrl)
-            registry.add("spring.datasource.username", database::getUsername)
-            registry.add("spring.datasource.password", database::getPassword)
-            registry.add("spring.jpa.hibernate.ddl-auto") { "create-drop" }
-        }
-    }
+//    companion object {
+//        @Container
+//        val database = MySQLContainer<Nothing>("mysql:5.7.33").apply {
+//            withDatabaseName("myapp")
+//        }
+//
+//        @JvmStatic
+//        @DynamicPropertySource
+//        fun properties(registry: DynamicPropertyRegistry) {
+//            registry.add("spring.datasource.url", database::getJdbcUrl)
+//            registry.add("spring.datasource.username", database::getUsername)
+//            registry.add("spring.datasource.password", database::getPassword)
+//            registry.add("spring.jpa.hibernate.ddl-auto") { "create-drop" }
+//        }
+//    }
 
     @Test
     fun shouldCreateBook() {
         val json = objectMapper.writeValueAsString(
             Book(id = 0, isbn = "978-4-7710-1067-3",title = "test", author = "shinyay", price = 100)
         )
-        mockMvc.perform(post("/books")
+        mockMvc.perform(post("/api/v1/books")
             .contentType(MediaType.APPLICATION_JSON)
             .content(json))
             .andDo(MockMvcResultHandlers.print())
