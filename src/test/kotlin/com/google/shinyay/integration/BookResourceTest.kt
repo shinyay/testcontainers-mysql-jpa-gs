@@ -16,7 +16,7 @@ import org.testcontainers.junit.jupiter.Testcontainers
 @Testcontainers
 @SpringBootTest
 @AutoConfigureMockMvc
-class TestContainerForBook {
+class BookResourceTest {
 
     @Autowired
     lateinit var mockMvc: MockMvc
