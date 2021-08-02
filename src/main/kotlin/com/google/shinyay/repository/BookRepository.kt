@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface BookRepository : JpaRepository<Book, Long> {
 
-    fun findBookByIsbn(isbn: String)
+    fun findBookByIsbn(isbn: String): MutableList<Book>
 }
