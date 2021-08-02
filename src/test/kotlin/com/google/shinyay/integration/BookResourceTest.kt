@@ -45,7 +45,13 @@ class BookResourceTest {
             .andExpect(jsonPath("$[0].title").exists())
             .andExpect(jsonPath("$[0].title").value("test"))
 
-
+        val result = mockMvc.perform(get("/api/v1/books/978-4-7710-1067-3"))
+            .andDo(MockMvcResultHandlers.print())
+            .andExpect(status().isOk)
+            .andReturn()
+        val javaType = objectMapper.typeFactory.constructCollectionType(List::class.java, Book::class.java)
+        val bookObject: List<Book> = objectMapper.readValue(result.response.contentAsString, javaType)
+        assertThat(bookObject[0].price).isEqualTo(100)
 
     }
 }
