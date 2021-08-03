@@ -39,7 +39,16 @@ Integration Test with `@SpringBootTest`
 @Testcontainers
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @AutoConfigureMockMvc
-class App Test {}
+class AppTest {}
+```
+Unit Test with Slice Test such as `@DataJpaTest`
+### Unit Test - Slice Test
+
+```kotlin
+@Testcontainers
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+class AppUnitTest {}
 ```
 
 ## Demo
