@@ -5,6 +5,12 @@
 - [MySQL Module](https://www.testcontainers.org/modules/databases/mysql/)
 
 ## Description
+### Dependencies
+
+- `testImplementation`
+  - **org.testcontainers**
+    - junit-jupiter
+    - mysql
 
 ## Demo
 
