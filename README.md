@@ -6,12 +6,20 @@
 
 ## Description
 ### Dependencies
-
+Dependency for **Testcontainers**
 - `testImplementation`
   - **org.testcontainers**
     - junit-jupiter
     - mysql
 
+```kotlin
+extra["testcontainersVersion"] = "1.15.3"
+dependencyManagement {
+	imports {
+		mavenBom("org.testcontainers:testcontainers-bom:${property("testcontainersVersion")}")
+	}
+}
+```
 ## Demo
 
 ## Features
