@@ -31,6 +31,17 @@ dependencyManagement {
 - mysql:mysql-connector-java
 - org.flywaydb:flyway-core
 
+### Integration Test - SpringBootTest
+Integration Test with `@SpringBootTest`
+
+```kotlin
+@SpringBootTest
+@Testcontainers
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@AutoConfigureMockMvc
+class App Test {}
+```
+
 ## Demo
 
 ## Features
