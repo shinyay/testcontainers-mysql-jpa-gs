@@ -2,6 +2,9 @@
 
 **Testcontainers** is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
 
+- Usecase for Testcontainers
+  - 
+
 - [MySQL Module](https://www.testcontainers.org/modules/databases/mysql/)
 
 ## Description
@@ -20,6 +23,14 @@ dependencyManagement {
 	}
 }
 ```
+
+#### Dependencies for the Others
+- org.springframework.boot
+  - spring-boot-starter-data-jpa
+  - spring-boot-starter-web
+- mysql:mysql-connector-java
+- org.flywaydb:flyway-core
+
 ## Demo
 
 ## Features
