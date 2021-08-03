@@ -28,10 +28,14 @@ class RepositoryTest {
     fun findAllBooksShouldReturnAllBooks() {
         val result = repository.findAll()
 
+        assertAll(
+            {assertThat(result[0].title).isEqualTo("GCP")},
+            {assertThat(result[1].title).isEqualTo("Spring")},
+            {assertThat(result[2].title).isEqualTo("Java")}
+        )
 
-
-        assertThat(result[0].title).isEqualTo("Spring")
-        assertThat(result[1].title).isEqualTo("Java")
-        assertThat(result[2].title).isEqualTo("GCP")
+//        assertThat(result[0].title).isEqualTo("Spring")
+//        assertThat(result[1].title).isEqualTo("Java")
+//        assertThat(result[2].title).isEqualTo("GCP")
     }
 }
