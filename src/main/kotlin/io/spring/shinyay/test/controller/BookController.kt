@@ -1,7 +1,7 @@
-package io.sprint.shinyay.test.controller
+package io.spring.shinyay.test.controller
 
-import io.sprint.shinyay.test.entity.Book
-import io.sprint.shinyay.test.service.BookService
+import io.spring.shinyay.test.entity.Book
+import io.spring.shinyay.test.service.BookService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

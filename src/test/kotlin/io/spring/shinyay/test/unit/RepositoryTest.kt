@@ -1,6 +1,6 @@
-package io.sprint.shinyay.test.unit
+package io.spring.shinyay.test.unit
 
-import io.sprint.shinyay.test.repository.BookRepository
+import io.spring.shinyay.test.repository.BookRepository
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertAll

@@ -1,6 +1,6 @@
-package io.sprint.shinyay.test.repository
+package io.spring.shinyay.test.repository
 
-import io.sprint.shinyay.test.entity.Book
+import io.spring.shinyay.test.entity.Book
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

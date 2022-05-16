@@ -1,8 +1,8 @@
-package io.sprint.shinyay.test.service
+package io.spring.shinyay.test.service
 
-import io.sprint.shinyay.test.entity.Book
-import io.sprint.shinyay.test.logger
-import io.sprint.shinyay.test.repository.BookRepository
+import io.spring.shinyay.test.entity.Book
+import io.spring.shinyay.test.logger
+import io.spring.shinyay.test.repository.BookRepository
 import org.springframework.stereotype.Service
 
 @Service
