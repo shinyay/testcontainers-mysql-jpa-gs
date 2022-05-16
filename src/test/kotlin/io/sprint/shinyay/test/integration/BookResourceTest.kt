@@ -1,7 +1,7 @@
-package com.google.shinyay.integration
+package io.sprint.shinyay.test.integration
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.google.shinyay.entity.Book
+import io.sprint.shinyay.test.entity.Book
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

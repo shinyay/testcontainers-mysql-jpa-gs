@@ -1,4 +1,4 @@
-package com.google.shinyay.entity
+package io.sprint.shinyay.test.entity
 
 import javax.persistence.*
 

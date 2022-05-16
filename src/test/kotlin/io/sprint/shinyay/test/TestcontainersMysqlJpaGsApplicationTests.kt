@@ -1,4 +1,4 @@
-package com.google.shinyay
+package io.sprint.shinyay.test
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

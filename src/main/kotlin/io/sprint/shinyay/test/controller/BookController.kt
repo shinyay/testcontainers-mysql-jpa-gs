@@ -1,7 +1,7 @@
-package com.google.shinyay.controller
+package io.sprint.shinyay.test.controller
 
-import com.google.shinyay.entity.Book
-import com.google.shinyay.service.BookService
+import io.sprint.shinyay.test.entity.Book
+import io.sprint.shinyay.test.service.BookService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

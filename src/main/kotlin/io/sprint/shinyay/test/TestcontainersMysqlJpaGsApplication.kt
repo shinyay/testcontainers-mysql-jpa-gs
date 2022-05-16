@@ -1,4 +1,4 @@
-package com.google.shinyay
+package io.sprint.shinyay.test
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
